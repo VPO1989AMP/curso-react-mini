@@ -5,6 +5,7 @@ import { Home } from './componentes/Home'
 import './index.css'
 import { Producto } from './componentes/Producto'
 import { QueryClient,QueryClientProvider } from 'react-query'
+import {Balance} from './componentes/Balance'
 
 const queryClient= new QueryClient()
 
@@ -15,7 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/" element={<Home></Home>}>
           <Route path="/productos" element={<Producto></Producto>}/>
-          <Route path="/balance" element={<h1>balance</h1>}/>
+          <Route path="/balance" element={<Balance></Balance>}/>
         </Route>
       </Routes>
     </BrowserRouter>
