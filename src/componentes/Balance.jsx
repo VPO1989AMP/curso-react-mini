@@ -40,7 +40,7 @@ export function Balance() {
         const parametros ={
             from:cuenta,
             to: data.address,
-            value: ethers.utils.parseEther(data.amount).toHexString()
+            value: ethers.parseEther(data.amount)
         }
         console.log(parametros)
         try{
