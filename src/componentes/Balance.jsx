@@ -42,7 +42,7 @@ export function Balance() {
             to: data.address,
             value: ethers.parseEther(data.amount)
         }
-        console.log(parametros)
+        //console.log(parametros)
         try{
             const txHash = await ethereum.request({
                 method: 'eth_sendTransaction',
